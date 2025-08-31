@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quize and Jokes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><span>@</span>apexplanet</a></div>
+            <ul class="links">
+                <li><a href="#home" id="#home">home</a></li>
+                <li><a href="#quiz">quiz</a></li>
+                <li><a href="#gallary">gallary</a></li>
+                <li><a href="#jokes">Jokes</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <a href="#" class="action_btn hide">login</a>
+            <a href="https://www.google.com" class="search hide">
+                <input type="search" placeholder="search here..." class="search_input hide">
+            </a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#home">home</a></li>
+            <li><a href="#quiz">quize</a></li>
+            <li><a href="#gallary">gallary</a></li>
+            <li><a href="#jokes">Jokes</a></li>
+                <li><a href="#contact">contact</a></li>
+
+            <li><a href="" class="action_btn">login</a></li>
+            <li><input type="search" placeholder="search here..." class="search_input" id="blockinput"></li>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="wel">
+            <div class="weldiv">
+                <h1 class="welh1">welcome to this page here my task 3 project</h1>
+            </div>
+            <div class="divp">
+                <p class="wel_p">apexplanet software Private Limited, based in intership:</p>
+            </div>
+            <div class="divget"><a href="#" class="action_btn wel_btn">get started</a></div>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <div class="about">
+            <div class="aboutdiv">
+                <h1 class="welh1">slove this question</h1>
+            </div>
+            <div class="aboutp">
+                <div class="quiz-container">
+                    <h2 id="question">Loading question...</h2>
+                    <div id="options"></div>
+                    <p id="feedback"></p>
+                    <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+                    <p id="score"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallary">
+        <marquee>
+            <h1 class="welh1">apexplanet software Private.limited company based in intership</h1>
+        </marquee>
+        </h1>
+        <!-- Carousel -->
+        <div class="carousel">
+        <h1 class="welh1">"the lord radha krishana"-❤radhe radhe❤
+
+            <img src="/task3/IMG-20250830-WA0004.jpg" class="active" alt="Slide 1">
+            <img src="/task3/IMG-20250830-WA0005.jpg" alt="Slide 2">
+            <img src="/task3/IMG-20250830-WA0006.jpg" alt="Slide 3">
+            <img src="/task3/IMG-20250830-WA0007.jpg" alt="Slide 3">
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <section id="jokes">
+        <!-- STEP 3: API FETCH -->
+        <div class="step">
+            <h3>3. Fetch Data from an API</h3>
+            <p><b>Objective:</b> Learn how to work with external APIs to fetch real-time data.</p>
+            <p><b>Actions:</b> Fetch data from a public API (e.g., weather or joke API) and display dynamically.</p>
+            <div class="api-container">
+                <p id="joke">Click the button to get a random joke 🤩</p>
+                <button onclick="getJoke()">Get Joke</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact_main">
+            <h1 class="welh1">contact us</h1>
+            <div class="heading">
+                <p class="wel_p">For any queries or support, please reach out to us at:</p>
+            </div>
+            <div class="namediv">
+                <p class="p1"> name</p>
+                <input type="text" placeholder="Enter your name" class="contact_input">
+            </div>
+            <div class="emaildiv">
+                <p class="p1">email</p>
+                <input type="email" placeholder="Enter your email" class="contact_input">
+            </div>
+            <div class="massagediv">
+                <p class="p1">ask enythings</p>
+                <textarea cols="30" rows="10" placeholder="Enter your message" class="contact_input"></textarea>
+            </div>
+            <div class="submitdiv"><button class=" action_btn">submit</button></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <p class="footer_p">
+                &copy; somnath chakraborty ApexPlanet Software Pvt Ltd | Designed with ❤. All rights reserved.
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+</html>
